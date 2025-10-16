@@ -7,7 +7,142 @@
     <title>Punchey</title>
   </head>
   <body>
-    <div id="app">Hello Punchey</div>
+    <nav class="top-nav">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="/logo.svg" alt="Punchey" />
+        </div>
+
+        <div class="nav-center">
+          <div class="dropdown">
+            <button class="nav-button">
+              <span>Company</span>
+              <img src="/chevron.svg" alt="" class="chevron-down" />
+            </button>
+            <div class="dropdown-menu">
+              <a href="/about">About Us</a>
+              <a href="/articles">Articles</a>
+              <a href="/our-team">Our Team</a>
+              <a href="/join-the-team">Join the Team</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="nav-button">
+              <span>Industry Apps</span>
+              <img src="/chevron.svg" alt="" class="chevron-down" />
+            </button>
+            <div class="dropdown-menu">
+              <a href="/test">Test</a>
+              <a href="/test">Test</a>
+              <a href="/test">Test</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="nav-button">
+              <span>Resources</span>
+              <img src="/chevron.svg" alt="" class="chevron-down" />
+            </button>
+            <div class="dropdown-menu">
+              <a href="/press-releases">Press Releases</a>
+              <a href="/terms-of-service">Terms of Service</a>
+              <a href="/privacy-policy">Privacy Policy</a>
+            </div>
+          </div>
+
+          <a href="/contact-us" class="nav-button">
+            <span>Contact</span>
+          </a>
+        </div>
+
+        <div class="nav-right">
+          <a
+            href="https://live.punchey.com/apply"
+            target="_blank"
+            class="nav-button secondary"
+          >
+            <span>Create Account</span>
+          </a>
+
+          <a
+            href="https://live.punchey.com/"
+            target="_blank"
+            class="nav-button primary"
+          >
+            <span>Sign in</span>
+          </a>
+        </div>
+
+        <button class="mobile-menu-button" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-dropdown">
+          <button class="nav-button">
+            <span>Company</span>
+            <img src="/chevron.svg" alt="" class="chevron-down" />
+          </button>
+          <div class="mobile-dropdown-menu">
+            <a href="/about">About Us</a>
+            <a href="/articles">Articles</a>
+            <a href="/our-team">Our Team</a>
+            <a href="/join-the-team">Join the Team</a>
+          </div>
+        </div>
+
+        <div class="mobile-dropdown">
+          <button class="nav-button">
+            <span>Industry Apps</span>
+            <img src="/chevron.svg" alt="" class="chevron-down" />
+          </button>
+          <div class="mobile-dropdown-menu">
+            <a href="/test">Test</a>
+            <a href="/test">Test</a>
+            <a href="/test">Test</a>
+          </div>
+        </div>
+
+        <div class="mobile-dropdown">
+          <button class="nav-button">
+            <span>Resources</span>
+            <img src="/chevron.svg" alt="" class="chevron-down" />
+          </button>
+          <div class="mobile-dropdown-menu">
+            <a href="/press-releases">Press Releases</a>
+            <a href="/terms-of-service">Terms of Service</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+          </div>
+        </div>
+
+        <a href="/contact-us" class="nav-button">
+          <span>Contact</span>
+        </a>
+
+        <div class="mobile-menu-divider"></div>
+
+        <a
+          href="https://live.punchey.com/apply"
+          target="_blank"
+          class="nav-button secondary"
+        >
+          <span>Create Account</span>
+        </a>
+
+        <a
+          href="https://live.punchey.com/"
+          target="_blank"
+          class="nav-button primary"
+        >
+          <span>Sign in</span>
+        </a>
+      </div>
+    </nav>
+
     <script type="module" src="/src/js/index.js"></script>
   </body>
 </html>
