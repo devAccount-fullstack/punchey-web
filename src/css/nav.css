@@ -153,7 +153,7 @@
 
 .mobile-menu-button span {
   width: 100%;
-  height: 2px;
+  height: 3px;
   background: #1c1d1f;
   border-radius: 2px;
   transition: all 0.3s ease;
@@ -230,7 +230,6 @@
   margin: 12px 0;
 }
 
-/* Responsive */
 @media (max-width: 1200px) {
   .nav-container {
     padding: 0 30px;
@@ -271,7 +270,7 @@
   }
 
   .nav-container {
-    padding: 0 20px;
+    padding: 0 42px;
   }
 
   .logo {
@@ -290,20 +289,5 @@
   .mobile-menu-button {
     display: flex;
     margin-left: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-container {
-    padding: 0 16px;
-  }
-
-  .logo {
-    width: 100px;
-    height: 22px;
-  }
-
-  .mobile-menu {
-    padding: 16px;
   }
 }

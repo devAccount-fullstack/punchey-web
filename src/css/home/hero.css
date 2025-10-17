@@ -227,7 +227,12 @@
   flex-grow: 0;
 }
 
-/* Responsive */
+.hero-mobile-auth-buttons {
+  padding: 24px 0 0 0;
+  display: none;
+  visibility: hidden;
+}
+
 @media (max-width: 1200px) {
   .hero {
     height: auto;
@@ -320,7 +325,7 @@
     min-height: auto;
     padding-top: 0;
     margin-top: -80px;
-    padding-bottom: 60px;
+    padding-bottom: 12px;
     height: auto;
   }
 
@@ -329,7 +334,7 @@
   }
 
   .hero-container {
-    padding: 0 20px;
+    padding: 0 42px;
     padding-top: 80px;
   }
 
@@ -347,11 +352,18 @@
     font-size: 16px;
     margin-top: 20px;
     height: auto;
+    padding: 0 10px;
   }
 
   .hero-logos {
-    margin-top: 40px;
+    margin-top: 28px;
     gap: 12px;
+    flex-direction: column;
+  }
+
+  .hero-mobile-auth-buttons {
+    display: block;
+    visibility: visible;
   }
 
   .hero-logo-box {
@@ -372,7 +384,7 @@
   }
 
   .hero-image-wrapper {
-    margin-top: 48px;
+    margin-top: 28px;
     width: 100%;
     height: auto;
     margin-left: 0;
@@ -422,26 +434,18 @@
   .pattern {
     width: 100%;
     height: auto;
+    bottom: 112px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-container {
-    padding: 0 16px;
-    padding-top: 80px;
-  }
-
   .hero-title {
-    margin-top: 40px;
-  }
-
-  .hero-title,
-  .hero-title-gradient {
-    font-size: 28px;
+    margin-top: 20px;
+    font-size: 36px;
   }
 
   .hero-subtitle {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .hero-logos {
@@ -450,8 +454,13 @@
 
   .hero-logo-box {
     width: auto !important;
-    min-width: 80px;
-    max-width: 120px;
+    min-width: 100px;
+    max-width: 184px;
+    min-height: 28.7px;
+  }
+
+  .hero-logo-box:nth-child(3) img {
+    max-height: 15px;
   }
 
   .hero-image-wrapper {
@@ -459,16 +468,7 @@
   }
 
   .hero-fab {
-    width: 40px;
-    height: 40px;
-    right: 12px;
-    bottom: 80px;
-    padding: 6px;
-  }
-
-  .hero-fab img {
-    width: 14px;
-    height: 14px;
+    visibility: hidden;
   }
 
   .ellipse {
